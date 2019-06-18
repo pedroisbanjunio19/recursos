@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #718096;
+}
+
+h1 {
+    font-size: 18px;
+    color: #38b2ac;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+p {
+    line-height: 1.5;
+    margin: 12px 0;
+}
+
+b {
+    color: #38b2ac;
+}
+
+hr {
+    border: 0.5px solid rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+}
+
+ul {
+    margin-left: 12px;
+}
+
+li {
+    margin: 12px 0;
+}
+
+.card {
+    max-width: 720px;
+    padding: 24px;
+    margin: 20px auto;
+    border: rgba(0,0,0,0.08);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    padding: 10px 20px;
+    background-color: #38b2ac;
+    color: white;
+    text-align: left;
+}
+
+td {
+    padding: 10px 20px;
+    border: 1px solid #38b2ac;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #38b2ac;
+    border: none;
+    border-bottom: 2px solid #287d78;
+    cursor: pointer;
+    transition: background-color 400ms ease-in-out;
+
+}
+
+button:hover {
+    background-color: #287d78;
+}
+
+button:active,
+button:focus {
+    outline: none;
+    border: none;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 12px 12px 0;
+    border: none;
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.glosario {
+    color: #287d78;
+    cursor: help;
+    position: relative;
+}
+
+.definicion  {
+    display: none;
+    border: 1px solid #287d78;
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+    position: absolute;
+    top:  20px;
+    left: 20px;
+    animation-name: fadeOut;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+}
+
+.definicion.activo {
+    display: inline;
+    opacity: 1;
+    animation-name: fadeIn;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+}
